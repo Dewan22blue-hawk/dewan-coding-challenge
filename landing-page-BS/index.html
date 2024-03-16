@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <title>Landing Page</title>
+    <style>
+      body {
+        padding-top: 56px;
+      }
+      .jumbotron {
+        text-shadow: #020502 1px 1px;
+      }
+      .background-header {
+        padding-top: 2rem;
+        background-image: url("https://source.unsplash.com/featured/?coding");
+        background-color: #fafbfc;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      }
+      .btn-primer {
+        background-color: #20a608;
+        border-color: #020502;
+      }
+      .service-style {
+        margin-top: 15px;
+        background-color: #fafbfc;
+      }
+      .text-green {
+        color: #0b9b6b;
+      }
+      h2:before,
+      h2:after {
+        background-color: #0b9b6b;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 25%;
+      }
+      .bejat:before,
+      .bejat:after {
+        background-color: #0b9b6b;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 36%;
+      }
+      h2::before {
+        right: 0.5em;
+        margin-left: -50%;
+      }
+      h2::after {
+        left: 0.5em;
+        margin-right: -50%;
+      }
+      .btn-sekunder {
+        background-color: transparent;
+        border-color: #dbdbdb;
+        color: #0b9b6b;
+      }
+      .btn-sekunder:hover {
+        background-color: #0b9b6b;
+        border-color: #dbdbdb;
+        color: #fff;
+      }
+      .cover {
+        background: no-repeat center/cover;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a href="" class="navbar-brand"><img src="img/codepolitan-logo.png" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- headline -->
+    <section class="jumbotron jumbotron-fluid background-header">
+      <div class="container-fluid text-center">
+        <h1 class="display-3" style="color: aliceBlue">Solusi Terbaik Belajarmu</h1>
+        <p class="lead fw-bold text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit necessitatibus ut voluptas aliquam quae excepturi quis placeat sint voluptatum maiores?</p>
+        <p>
+          <a href="#" class="btn btn-primary btn-primer">Gabung Sekarang</a>
+          <a href="#" class="btn btn-secondary">Learn More</a>
+        </p>
+      </div>
+    </section>
+    <section id="services" class="container-fluid service-style">
+      <div class="row text-center">
+        <div class="col-12 mb-4"><h2 class="display-4" style="margin-top: 5rem !important">Mengapa Memilih Kami?</h2></div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fa-solid fa-list fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-4 text-green">Fasilitas Oke</h3>
+          <p>Fasailitas yang kami sediakan sangat lengkap dan mudah untuk diakses</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-laptop-code fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-4 text-green">Modul Lengkap</h3>
+          <p>Fasailitas yang kami sediakan sangat lengkap dan mudah untuk diakses</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-chart-line fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-4 text-green">Terarah</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eligendi.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-money-bill fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-4 text-green">Biaya Terjangkau</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam omnis obcaecati inventore repellendus qui debitis fuga exercitationem?</p>
+        </div>
+        <div class="col-12 pt-3 mb-5">
+          <a href="#" role="button" target="_blank" class="btn text-white btn-lg bg-danger">Service lainnya</a>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid" id="products">
+      <div class="row text-center">
+        <div class="col-12 pb-4">
+          <h2 class="display-4 text-center mb-5 bejat" style="margin-top: 5rem !important">Produk Kami</h2>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://source.unsplash.com/featured/?flutter" style="max-height: 400px" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Membuat Aplikasi Android Dengan Flutter</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, omnis?</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-sekunder">Detail & Harga</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://source.unsplash.com/featured/?laravel" style="max-height: 400px" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Membuat Aplikasi Web Menggunakan Laravel</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, omnis?</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-sekunder">Detail & Harga</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://source.unsplash.com/featured/?codeigniter" style="max-height: 400px" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Belajar dasar Codeigniter 4</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, omnis?</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-sekunder">Detail & Harga</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="bg-light" style="padding-top: 5rem">
+      <div class="container-fluid-max">
+        <h2 class="display-4 text-center mb-5 bejat">Tentang Kami</h2>
+        <div class="row">
+          <div class="col-12 col-md-6 p-0">
+            <div class="p-3">
+              <h3 class="display-5 text-center text-green mt-3 mb-3">Perjalanan Bisnis Kami</h3>
+              <p style="text-align: justify">
+                Ini merupakan deskripsi dari Perjalanan bisnis kami. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat iure iusto temporibus ipsa nisi hic id tempora inventore quas atque? Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Enim, tempore iste eaque delectus officia ipsum in fuga sequi iusto laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, debitis!
+              </p>
+              <div class="col-12 pt-3 text-center">
+                <a href="" class="btn bg-danger btn-lg text-white">Lihat Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 p-0">
+            <div class="vh-100 cover" style="background-image: url('https://source.unsplash.com/featured/?about')"></div>
+          </div>
+          <div class="col-12 col-md-6 p-0">
+            <div class="vh-100 cover" style="background-image: url('https://source.unsplash.com/featured/?coders')"></div>
+          </div>
+          <div class="col-12 col-md-6 p-0">
+            <div style="padding: 15px">
+              <h3 class="display-4 text-center text-green mt-3 mb-3">Tim Kami</h3>
+              <p style="text-align: justify">
+                Ini merupakan deskripsi dari tim kami. Ini merupakan deskripsi dari tim kamiIni merupakan deskripsi dari tim kamiIni merupakan deskripsi dari tim kamiIni merupakan deskripsi dari tim kami. Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Eveniet est minus, nemo voluptatibus repellat adipisci ratione eius consequatur qui possimus!
+              </p>
+              <div class="col-12 mb-3 text-center">
+                <a href="" class="btn bg-danger btn-lg text-white">Lihat Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="container-fluid text-center pt-3" style="background-color: #e9f2eb">
+      <h2 class="display-4 pb-4">Hubungi Kami Sekarang!</h2>
+      <p class="lead mb-3">Kirim Pesan untuk bergabung bersama kami</p>
+      <a href="#" class="btn btn-primary btn-lg mb-4">WhatsApp Kami</a>
+    </section>
+    <footer class="bg-dark">
+      <div class="col-lg-12 p-3">
+        <div class="text-center">
+          <a href="#" class="text-light p-2"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-light p-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light p-2"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-light p-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light p-2"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="text-center text-secondary">Copyright &copy; Codepolitan 2024</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ea0aa2d812.js" crossorigin="anonymous"></script>
+  </body>
+</html>

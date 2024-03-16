@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hallo</h1>
+    <script>
+      //   console.log("bakal muncul pertama");
+
+      //   setTimeout(() => {
+      //     console.log("Ini udah masuk ke memory dan ditimer 3 detik");
+      //   }, 3000);
+      //   console.log("meskipun terakhir aku akan menjadi kedua");
+      //
+      setTimeout(function () {
+        document.body.style.backgroundColor = "red";
+        setTimeout(function () {
+          document.body.style.backgroundColor = "yellow";
+          setTimeout(function () {
+            document.body.style.backgroundColor = "green";
+            setTimeout(function () {
+              document.body.style.backgroundColor = "aqua";
+            }, 3000);
+          }, 3000);
+        }, 3000);
+      }, 3000);
+      // setTimeout(function () {
+      //   document.body.style.backgroundColor = "yellow";
+      // }, 4000);
+      // setTimeout(function () {
+      //   document.body.style.backgroundColor = "green";
+      // }, 5000);
+      searchMovieApi(
+        "naruto",
+        function (movies) {
+          saveToMyDb(
+            movies,
+            function () {
+              // kalau berhasil kita simpan
+            },
+            () => {
+              // kalau gagal cobalagi
+            }
+          );
+        },
+        () => {
+          // server error
+        }
+      );
+    </script>
+    <script src="promise.js"></script>
+  </body>
+</html>
